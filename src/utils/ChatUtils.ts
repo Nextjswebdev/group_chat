@@ -1,4 +1,3 @@
-// ChatUtils.ts
 import axios from 'axios';
 import Filter from 'bad-words';
 import { Message } from '../types/ChatInterface';

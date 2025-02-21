@@ -1,16 +1,14 @@
-// ChatInterface.ts
-export  interface Message {
+export interface Message {
   id: string;
   text?: string;
   formattedText?: string;
   imageUrl?: string;
   timestamp: number;
   user: string;
-  avatarUrl?: string;  // Make this optional
+  avatarUrl?: string;
   backgroundColor?: string;
   textColor?: string;
-  groupId?: string; // New field for group messages
-  
+  groupId?: string;
 }
 
 export interface TypingUser {
@@ -23,7 +21,6 @@ export interface OnlineUser {
   lastActive: number;
   avatarUrl: string;
 }
- 
 
 export interface Group {
   id: string;
@@ -33,10 +30,7 @@ export interface Group {
   createdAt: number;
   description?: string;
   avatar?: string;
- 
 }
-
- 
 
 export interface ChatState {
   selectedGroupId: string | null;
@@ -47,12 +41,9 @@ export interface ChatState {
     description: string;
   };
 }
- 
+
 export interface CreateGroupModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (name: string, description: string) => void;
-  
-
 }
-

@@ -21,10 +21,3 @@ export const database = getDatabase(app);
 export const firestore = getFirestore(app);
 
 export { app };
-
-
- 
-  
- 
- 
- 
